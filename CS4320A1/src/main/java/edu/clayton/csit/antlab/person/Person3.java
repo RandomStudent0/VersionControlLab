@@ -21,7 +21,7 @@ public class Person3 {
 	}
 	
 	/**
-	 * Return a string rep of this object
+	 * `Return a string rep of this object
 	 * that varies with an input string
 	 *
 	 * @param input the varying string
@@ -43,6 +43,14 @@ public class Person3 {
 	 */
 	private String calc(String input) {
 	  //Person 3 put your implementation here
-	  return null;
+	  String rev = " ";
+	  
+	  for(int i = input.length()-1; i >= 0; i--){
+		  rev = rev +input.charAt(i); // add the letter to the font 
+		  if(i == 0){
+			  System.out.println(rev);
+	  }  
 	}
-}
+	return rev;
+	}
+	}
